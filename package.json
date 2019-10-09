@@ -1,0 +1,18 @@
+{
+  "name": "puul-print-server",
+  "version": "1.0.0",
+  "description": "Puul.tv Print Server for thermal printers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv-defaults": "^1.0.2",
+    "express": "^4.17.1",
+    "node-thermal-printer": "^4.1.0",
+    "printer": "^0.2.2"
+  }
+}
