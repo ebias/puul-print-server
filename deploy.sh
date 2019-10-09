@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo apt-get update
 sudo apt-get install nodejs npm git
 npm install pm2@latest -g
 cd ~
