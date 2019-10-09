@@ -7,7 +7,7 @@ const port = process.env.PORT;
 
 let driver;
 
-if (process.env.USEDRIVER) {
+if (process.env.USEDRIVER == 'TRUE') {
     driver = require("printer");
 } else {
     driver = null;
