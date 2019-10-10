@@ -1,11 +1,12 @@
-https://raspberrypi.org/downloads/raspbian/ 
+# Installation
 
-Download Buster Lite
 
-Burn iso to SD-Card with balena etcher
+1. Download Rasbian Buster Lite from https://raspberrypi.org/downloads/raspbian/
+2. Burn iso to SD-Card with Balena Etcher from https://www.balena.io/etcher/
+3. Put a empty file on the SD-Cards root folder with filename 'ssh' (no extension!) to enable ssh service on the RasPi.
+4. Put a 'wpa_supplicant.conf' file on the same folder with following contents to configure Wi-fi connection:
 
-put a ssh file on root
-
+```
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 ap_scan=1
@@ -18,15 +19,18 @@ network={
 	id_str="0"
 	priority=100
 }
+```
 
-ssh
+5. SSH to the RasPi with command
 
-pi@IP
-raspberry
+```
+ssh pi@RASPI-IP
+```
 
+The password for the **pi** user is **raspberry**
 
-run
+6. Run the deploy script: 
 
-
-bash <(curl -s http://mywebsite.com/myscript.txt)
-
+```
+bash <(curl -s https://raw.githubusercontent.com/ebias/puul-print-server/master/deploy.sh)
+```
