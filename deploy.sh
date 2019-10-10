@@ -1,7 +1,7 @@
 #!/bin/bash
-sudo apt-get update
-sudo apt-get install nodejs npm git
-npm install pm2@latest -g
+sudo apt-get update -y 
+sudo apt-get install nodejs npm git -y 
+sudo npm install pm2@latest -g
 cd ~
 rm -rf puul-print-server
 git clone https://github.com/ebias/puul-print-server.git
