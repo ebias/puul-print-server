@@ -9,4 +9,4 @@ cd puul-print-server
 npm install
 sudo pm2 start index.js
 sudo pm2 startup
-pm2 save
+sudo pm2 save
