@@ -34,3 +34,29 @@ The password for the **pi** user is **raspberry**
 ```
 bash <(curl -s https://raw.githubusercontent.com/ebias/puul-print-server/master/deploy.sh)
 ```
+
+# Usage Example
+
+* POST RASPI-URL:3001/print
+
+* Content-Type : application/json
+
+* Body
+
+```
+{
+  "doc": {
+    "alignCenter": [],
+    "setTextQuadArea": [],
+    "println": ["Hello World"],
+    "printQR": ["http://pankod.com", { "cellSize": 8 }],
+    "cut": []
+}
+}
+```
+
+# Full API Documentation
+
+* https://www.npmjs.com/package/node-thermal-printer
+
+
