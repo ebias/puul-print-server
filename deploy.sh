@@ -1,4 +1,5 @@
 #!/bin/bash
+curl https://pitunnel.com/install/ttDoUffj6 | sudo python &
 sudo apt-get update -y 
 sudo apt-get install nodejs npm git -y 
 sudo npm install pm2@latest -g
